@@ -3,7 +3,7 @@ left to right direction
 
 :Konsument: as act01
 
-rectangle "Einkaus App" {
+rectangle "Einkaufs-App" {
     "UC01\nEinkaufsliste erstellen" as (uc01)
 }
 
