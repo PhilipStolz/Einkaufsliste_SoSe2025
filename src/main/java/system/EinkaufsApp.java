@@ -4,6 +4,8 @@ import system.outsideinteraction.KonsumentGUI;
 import system.outsideinteraction.SchnittstelleVomKonsument;
 import system.outsideinteraction.SchnittstelleZumKonsument;
 
+import java.util.LinkedList;
+
 // Erste Änderung
 
 public class EinkaufsApp implements SchnittstelleVomKonsument {
@@ -30,6 +32,8 @@ public class EinkaufsApp implements SchnittstelleVomKonsument {
 
 	@Override
 	public void schreibeInEinkaufsliste(String eintrag) {
-		// TODO Auto-generated method stub
+		LinkedList<String> einkaufsliste = new LinkedList<>();
+		einkaufsliste.add(eintrag);
+		konsument.zeigeEinkaufsliste(einkaufsliste);
 	}
 }
