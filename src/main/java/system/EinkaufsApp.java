@@ -28,4 +28,8 @@ public class EinkaufsApp implements SchnittstelleVomKonsument {
 		this.konsument = konsument;
 	}
 
+	@Override
+	public void schreibeInEinkaufsliste(String eintrag) {
+		// TODO Auto-generated method stub
+	}
 }
