@@ -1,0 +1,12 @@
+@startuml
+left to right direction
+
+:Konsument: as act01
+
+rectangle "Einkaus App" {
+    "UC01\nEinkaufsliste erstellen" as (uc01)
+}
+
+act01 -- (uc01)
+
+@enduml
