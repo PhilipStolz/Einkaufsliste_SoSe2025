@@ -12,7 +12,9 @@ public class EinkaufsApp implements SchnittstelleVomKonsument {
 
 	@SuppressWarnings("unused")
 	private SchnittstelleZumKonsument konsument;
-	
+
+	LinkedList<String> einkaufsliste = new LinkedList<>();
+
 	public EinkaufsApp() {
 		
 	}
@@ -32,7 +34,6 @@ public class EinkaufsApp implements SchnittstelleVomKonsument {
 
 	@Override
 	public void schreibeInEinkaufsliste(String eintrag) {
-		LinkedList<String> einkaufsliste = new LinkedList<>();
 		einkaufsliste.add(eintrag);
 		konsument.zeigeEinkaufsliste(einkaufsliste);
 	}
