@@ -37,6 +37,30 @@ public class EinkaufslisteSteps implements SchnittstelleZumKonsument {
 		assertTrue(einkaufsliste.contains(eintrag));
 	}
 
+	@Given("folgende Einkaufsliste:")
+	public void folgende_einkaufsliste(io.cucumber.datatable.DataTable vorgegebeneEinkaufsliste) {
+		// Write code here that turns the phrase above into concrete actions
+		// For automatic transformation, change DataTable to one of
+		// E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+		// Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+		// Double, Byte, Short, Long, BigInteger or BigDecimal.
+		//
+		// For other transformations you can register a DataTableType.
+		throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("die Einkaufsliste sollte genau folgende Einträge in beliebiger Reihenfolge enthalten:")
+	public void die_einkaufsliste_sollte_genau_folgende_eintraege_in_beliebiger_reihenfolge_enthalten(io.cucumber.datatable.DataTable vorgegebeneEinkaufsliste) {
+		// Write code here that turns the phrase above into concrete actions
+		// For automatic transformation, change DataTable to one of
+		// E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+		// Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+		// Double, Byte, Short, Long, BigInteger or BigDecimal.
+		//
+		// For other transformations you can register a DataTableType.
+		throw new io.cucumber.java.PendingException();
+	}
+
 	@Override
 	public void zeigeEinkaufsliste(Collection<String> einkaufsliste) {
         this.einkaufsliste = einkaufsliste;
